@@ -7,6 +7,8 @@ kt_android_library(
     manifest = "AndroidManifest.xml",
     plugins = ["//:jetpack_compose_compiler_plugin"],
     visibility = ["//visibility:public"],
+    assets = ["assets/icon.png"],
+    assets_dir = "assets",
     deps = [
         "@maven//:androidx_activity_activity_compose",
         "@maven//:androidx_appcompat_appcompat",
